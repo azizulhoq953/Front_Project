@@ -23,4 +23,24 @@ line {
     /* or a larger value */
 }
 
-.w-custom {}
+/* image background */
+.circle-radial-gradient {
+    /* Define the size of the circle */
+    width: 400px;
+    /* Adjust width as needed */
+    height: 400px;
+    /* Adjust height as needed */
+
+    /* Make the element a perfect circle */
+    border-radius: 50%;
+    /* 50% border radius makes the element a perfect circle */
+
+    /* Apply a radial gradient background */
+    background-image: radial-gradient(circle, rgba(66, 153, 225, 0.5), rgba(72, 187, 120, 0.5));
+    /* Start color (blue) with 50% opacity and end color (green) with 50% opacity */
+}
+
+.radial-gradient {
+    background-image: radial-gradient(rgb(4, 134, 221) 10%, transparent 80%, rgb(1, 13, 122) 50%);
+    border-radius: 40%;
+}
