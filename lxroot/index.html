@@ -13,7 +13,7 @@
     <div class="container-fluid min-h-screen bg-center padding-right: 15px;padding-left: 15px;">
 
       <!-- navigation Bar  start-->
-        <nav class="sm md lg xl  flex items-center py-5 bg-gray-800 w-full text-center"> <!-- Added w-full class -->
+        <nav class="sm md lg xl  flex items-center py-5 bg-gray-800  text-center fixed top-0 w-full "> <!-- Added w-full class -->
             <div>
                 <a href="#" class="no-underline text-white font-semibold px-80">LxRoot</a>
             </div>
@@ -60,7 +60,7 @@
         </div>
        
         <div class="text-center grid place-items-center">
-            <hr width="67%" color="green" />
+            <hr width="62%" color="green" />
             <p class="text-3xl font-semibold py-4"  >LxRoot</p>
             <p class="text-2xl py-10 px-60 text-slate-500 font-medium">Your all-in-one platform for seamless hosting and site management. Streamlined, efficient,
                  and loaded with features to <br> supercharge your development experience.
@@ -68,10 +68,10 @@
           </div>
 
           <div class="text-center grid place-items-center py-40  ">
-            <hr width="67%" color="green" />
+            <hr width="62%" color="green" />
             <p class="text-3xl font-thin py-4" >Who is LxRoot for?</p>
 
-            <div class=" grid grid-cols-4 gap-2 py-10 w-10/12 ml-36 h-60">
+            <div class=" grid grid-cols-4 gap-1 py-10 w-10/12 ml-36 h-60">
               <div class="  grid place-items-start md:place-items-center  bg-slate-100 h-60 w-10/12 rounded-xl	" >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20">
                   <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
@@ -120,11 +120,11 @@
 
           <!-- features start-- -->
           <div class="text-center grid place-items-center py-40">
-            <hr width="72%" color="green" />
+            <hr width="62%" color="green" />
             <p class="text-3xl font-semibold py-4">features</p>
-            <div class="grid grid-cols-3 gap-4 place-items-stretch h-auto">
+            <div class="grid grid-cols-3 gap-4 place-items-stretch h-auto w-auto">
              
-              <div class="grid place-items-start bg-slate-100 h-52 w-full py-3 px-3 rounded-xl  ">
+              <div class="grid place-items-start bg-slate-100 h-52 max-w-96 py-3 px-3 rounded-xl  ">
                 <div class=" bg-slate-200 h-12 w-12 rounded-xl py-4 align-middle ">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="object-center object-none w-6 h-6  inline ">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
@@ -555,64 +555,92 @@
                   </li>
                   </ul>
               </div>
+              <div class=" py-1 p-10">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-4 text-white object-left font-bold">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                </svg>
+                
+              </div>
             </div>
             
 
           </div>
           
          
-          <div class="sm:flex sm:items-center sm:justify-between left-0 m-10">
-            <p class="text-white px-11 text-sm">Over 3 Cloud Servers Run by LxRoot</p>
+          <div class="sm:flex sm:items-center sm:justify-between left-10 mr-96 m-10">
+            <p class="text-gray-500 dark:text-gray-400 px-11 text-sm ml-60" >Over 3 Cloud Servers Run by LxRoot</p>
             <div class="flex mt-4 sm:justify-center sm:mt-0">
-                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                    <svg class="w-8 h-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19" >
-                          <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
-                      </svg>
-                    <span class="sr-only">Facebook page</span>
-                </a>
-                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                    <svg class="w-8 h-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
-                          <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"/>
-                      </svg>
-                    <span class="sr-only">Discord community</span>
-                </a>
-                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                    <svg class="w-8 h-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
-                      <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
-                  </svg>
-                    <span class="sr-only">Twitter page</span>
-                </a>
-                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                    <svg class="w-8 h-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                          <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
-                    </svg>
-                    <span class="sr-only">GitHub account</span>
-                </a>
-                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                    <svg class="w-8 h-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                      <path fill-rule="evenodd" d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z" clip-rule="evenodd"/>
-                  </svg>
-                    <span class="sr-only">Dribbble account</span>
-                </a>
-            </div>
-        </div>
-        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
-        </span>
-        <div class="text-white grid grid-cols-2 px-4 py-2  md:grid-cols-4">
-        
-          <p>Terms of Service </p>
-          <p> DMCA</p>
-          <p>  Privacy Policy</p>
-          <p> Cookie Policy</p>
-       
-        
-       
-      </div>
-      </div>
+               
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
+                  <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
+              </svg>
+                <span class="sr-only">Twitter page</span>
+            </a>
+              
+            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+              <svg class="w-6 h-6 rounded-full" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M22.675 0H1.327C.596 0 0 .596 0 1.327v21.346C0 23.404.596 24 1.327 24h11.491v-9.294H9.691V11.4h3.128V8.41c0-3.1 1.893-4.789 4.658-4.789 1.325 0 2.464.098 2.796.142v3.24l-1.919.001c-1.504 0-1.796.715-1.796 1.763v2.314h3.587l-.467 3.306h-3.12V24h6.11c.732 0 1.327-.596 1.327-1.327V1.327C24 .596 23.404 0 22.675 0z"/>
+              </svg>
+              <span class="sr-only">Facebook page</span>
+          </a>
           
-        
 
+          <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+            <svg class="w-6 h-6 rounded-full" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M21.843 6.345c-.2-1.6-1.59-2.88-3.185-2.96C16.057 3.36 12 3.36 12 3.36s-4.057 0-6.658.025c-1.595.08-2.985 1.36-3.185 2.96-.228 1.882-.228 4.735-.228 4.735s0 2.853.228 4.735c.2 1.6 1.59 2.88 3.185 2.96C7.943 20.64 12 20.64 12 20.64s4.057 0 6.658-.025c1.595-.08 2.985-1.36 3.185-2.96.228-1.882.228-4.735.228-4.735s0-2.853-.228-4.735zM9.545 15.52v-6.64l6.01 3.32-6.01 3.32z"/>
+            </svg>
+            <span class="sr-only">YouTube channel</span>
+        </a>
+        
+             
+        <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+          <svg class="w-6 h-6 rounded-full" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19.618 0H4.382C1.965 0 0 1.965 0 4.382v15.236C0 22.035 1.965 24 4.382 24h15.236C22.035 24 24 22.035 24 19.618V4.382C24 1.965 22.035 0 19.618 0zM7.12 20.452H3.659V9h3.461v11.452zM5.39 7.362c-1.1 0-1.995-.895-1.995-2 0-1.105.895-2 2-2s2 .895 2 2c0 1.105-.895 2-2 2zm15.061 13.09h-3.462V14.33c0-1.455-.026-3.325-2.028-3.325-2.034 0-2.346 1.59-2.346 3.235v6.212H9.176V9h3.324v1.568h.046c.463-.883 1.597-1.814 3.286-1.814 3.515 0 4.161 2.312 4.161 5.315v6.384z"/>
+          </svg>
+          <span class="sr-only">LinkedIn profile</span>
+      </a>
+      
+      <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+        <svg class="w-6 h-6 rounded-full" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.415-4.033-1.415-.547-1.39-1.337-1.762-1.337-1.762-1.094-.747.083-.732.083-.732 1.207.085 1.844 1.239 1.844 1.239 1.076 1.844 2.823 1.312 3.51.999.107-.778.42-1.312.763-1.614-2.665-.303-5.466-1.332-5.466-5.93 0-1.31.468-2.382 1.236-3.22-.125-.303-.536-1.52.116-3.168 0 0 1.007-.322 3.3 1.23.958-.266 1.983-.398 3.003-.402 1.02.004 2.045.136 3.003.402 2.29-1.552 3.297-1.23 3.297-1.23.653 1.647.243 2.865.118 3.168.77.838 1.237 1.91 1.237 3.22 0 4.604-2.804 5.622-5.475 5.919.431.372.816 1.104.816 2.222v3.293c0 .318.217.694.824.576C20.564 21.8 24 17.302 24 12c0-6.627-5.373-12-12-12z"/>
+        </svg>
+        <span class="sr-only">GitHub account</span>
+    </a>
+            
+    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+      <svg class="w-6 h-6 rounded-full" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M17.75 21.75h-11v-7.5h11v7.5zm3.048-11.39l-9.6-3.6.9-2.25 9.6 3.6-.9 2.25zm.45 5.39l-11.25 1.5-.3-2.25 11.25-1.5.3 2.25zm-.75-3.75l-10.5 4.5-.9-2.1 10.5-4.5.9 2.1zm-1.5-4.5l-7.2 8.1-1.95-1.65 7.2-8.1 1.95 1.65z"/>
+      </svg>
+      <span class="sr-only">Stack Overflow page</span>
+  </a>
+   
+
+                
+      </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 " />
+        <div class="flex items-center text-white px-4 py-2 ml-72 pb-10">
+          <!-- Left-side square shape -->
+          <div class="w-14 h-8  border-2"></div>
+          
+          <!-- Right-side content -->
+          <div class="ml-4">
+              <p>© LxRoot 2023</p>
+              <p class="text-gray-500 dark:text-gray-400 text-xs ">LxRoot is a registered trademark of LXROOT LLC.</p>
+          </div>
+          <div class="flex justify-end items-center col-span-2 md:col-span-4 md:justify-end custom-ml text-gray-500 dark:text-gray-400 text-sm">
+            <p>Terms of Service</p>
+            <p class="ml-4">DMCA</p>
+            <p class="ml-4">Privacy Policy</p>
+            <p class="ml-4">Cookie Policy</p>
+        </div>
+      </div>
+      
+        
+      
+   </div>
+          
             </div>
             
         </footer>

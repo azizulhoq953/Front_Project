@@ -17,3 +17,10 @@ line {
     height: 100vh;
 
 }
+
+.custom-ml {
+    margin-left: 500px;
+    /* or a larger value */
+}
+
+.w-custom {}
