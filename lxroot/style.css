@@ -44,3 +44,25 @@ line {
     background-image: radial-gradient(rgb(4, 134, 221) 10%, transparent 80%, rgb(1, 13, 122) 50%);
     border-radius: 40%;
 }
+
+.nav-links hr {
+    width: 100%;
+}
+
+/* #checke:checked~ul {
+    left: 0;
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+ion-icon {
+    color: white;
+}
+
+
+ul li a {
+    @apply rounded py-[7px] px-[13px] text-[17px]
+}

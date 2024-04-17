@@ -6,72 +6,174 @@
     <title>lxroot</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
+    <script src="https://kit.fontawesome.com/d4fea1bc27.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  </head>
 <body>
 
 
-    <div class="container-fluid min-h-screen bg-center padding-right: 15px;padding-left: 15px;">
-
-      <!-- navigation Bar  start-->
-        <nav class="sm md lg xl  flex items-center py-4 bg-gradient-to-r from-slate-800 to-black   text-center fixed top-0 w-full "> <!-- Added w-full class -->
-            <div>
-                <a href="#" class="no-underline text-white font-serif px-80">LxRoot</a>
-            </div>
-            <ul class=""> <!-- Added w-full class -->
-        
-                <li class="list-none inline-block "> <a href="#" class="no-underline text-white font-serif px-2 nav-link hover:text-blue-400 transition-colors duration-300">Products</a> </li>
-                <li class="list-none inline-block "> <a href="#" class="no-underline text-white font-serif px-2 nav-link hover:text-blue-400 transition-colors duration-300">Price</a> </li>
-                <li class="list-none inline-block "> <a href="#" class="no-underline text-white font-serif px-2 nav-link hover:text-blue-400 transition-colors duration-300">Support</a> </li>
-                <li class="list-none inline-block "> <a href="#" class="no-underline text-white font-serif px-2 nav-link hover:text-blue-400 transition-colors duration-300">Partners</a> </li>
-                <li class="list-none inline-block "> <a href="#" class="no-underline text-white font-serif px-2v nav-link hover:text-blue-400 transition-colors duration-300">Developers</a> </li>
-                <li class="list-none inline-block "> <a href="#" class="no-underline text-white font-serif px-2 nav-link hover:text-blue-400 transition-colors duration-300">About</a> </li>
-                <li class="list-none inline-block "> <a href="#" class="no-underline text-white font-serif nav-link hover:text-blue-400 transition-colors duration-300">Contact</a> </li>
-            </ul>
-            <div class="px-60" >
-                <button class="bg-sky-500/75 no-underline text-white  rounded-xl px-5 py-1 nav-link hover:text-blue-400 transition-colors duration-300">Get Started</button>
-            </div>
+  <header class="bg-gradient-to-r from-slate-800 to-black py-4 text-white "> 
+    <nav class="flex justify-between  
+                items-center w-[92%]  mx-auto font-serif"> 
+        <div class="font-bold text-white font-serif ml-10"> 
+            LxRoot 
+        </div> 
+        <div class="nav-links duration-500 md:static  
+                    absolute md:min-h-fit min-h-[60vh]  
+                    left-0 top-[-100%] md:w-auto  w-full h-full align-top  flex items-center px-5 bg-gradient-to-r from-slate-800 to-black lg:block  "> 
+                    <hr class="md:hidden border-gray-500 my-2">
+            <ul class="flex md:flex-row flex-col  
+md:items-center md:gap-[1vw] gap-8 ml-64"> 
+                     
+                <li> 
+                    <a class="hover:text-cyan-700 font-serif" href="#">Products</a> 
+                 
+                </li> 
+                <hr class="md:hidden hover:text-cyan-700 my-2 mr-72">
+                <li> 
+                    <a class="hover:text-cyan-700 font-serif" href="#">Price</a> 
+                </li> 
+                <hr class="md:hidden border-gray-500 my-2 mr-72">
+                <li> 
+                    <a class="hover:text-cyan-700 font-serif" href="#">Support</a> 
+                </li> 
+                <hr class="md:hidden border-gray-500 my-2 mr-72">
+                <li> 
+                    <a class="hover:text-cyan-700" href="#">Partners</a> 
+                </li> 
+                <hr class="md:hidden border-gray-500 my-2 mr-72">
+                <li> 
+                    <a class="hover:text-cyan-700 font-serif" href="#">Developers</a> 
+                </li> 
+                <hr class="md:hidden border-gray-500 my-2 mr-72">
+                <li> 
+                  <a class="hover:text-cyan-700 font-serif" href="#">About</a> 
+              </li> 
+              <hr class="md:hidden border-gray-500 my-2 ">
+              <li> 
+                <a class="hover:text-cyan-700 font-serif" href="#">Contact</a> 
+            </li> 
             
-        </nav>
+            </ul> 
+            
+        </div> 
+        <div class="px-60 md:block hidden" >
+          <button class="bg-sky-500/75 no-underline text-white  rounded-xl px-5 py-1 nav-link hover:text-blue-400 transition-colors duration-300">Get Started</button>
+      </div>
+        <div class="flex items-center  gap-6"> 
+            <ion-icon onclick="onToggleMenu(this)" 
+                      name="menu" class="text-3xl cursor-pointer  
+                                         md:hidden text-white"> 
+              </ion-icon> 
+        </div> 
+    </nav> 
+</header> 
+
         <!-- navigation Bar  End-->
 
         <!-- Head Line Start -->
-         <div class="py-20 px-80 flex items-center">
-            
-        <div class="text-5xl font-extrabold ...">
-            <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-teal-300">
-                LxRoot
-            </span>
-            <p class="text-gray-700 " >Multi-server Application</p> 
-            <p class="text-gray-700">Hosting Ptatform</p>
-            <p class="text-xl font-semibold text-gray-700" >Flexible · Powerful · Fast · Secure</p>
-         
-            <div class="px-4 py-4 text-sm space-x-4" >
-              <button class="bg-sky-500/75 no-underline text-white  rounded-lg px-1 py-2 ">Getting Started</button>
-              <button class="bg-gray-200 no-underline text-slate-900  rounded-lg px-1 py-2">Documentation</button>
-              <button class="bg-gray-200 no-underline text-slate-900   rounded-lg px-1 py-2">Become a Partner</button>
-            </div>
+        <div class="flex items-center justify-center">
+          <!-- Text Content -->
+          <div class="py-20 px-8 m-9 md:px-20 lg:px-80 flex items-center">
+              <div class="text-5xl font-extrabold md:float-left">
+                  <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-teal-300 ">
+                      LxRoot
+                  </span>
+                  <div class="md:whitespace-nowrap">
+                      <p class="text-gray-700">Multi-server Application</p> 
+                      <p class="text-gray-700">Hosting Platform</p>
+                  </div>
+                  <p class="text-xl font-semibold text-gray-700">Flexible · Powerful · Fast · Secure</p>
+              
+                  <div class="px-4 py-4 text-sm space-x-4 md:flex flex-row md:whitespace-nowrap">
+                      <button class="bg-sky-500/75 no-underline text-white rounded-lg px-3 py-2">Getting Started</button>
+                      <button class="bg-gray-200 no-underline text-slate-900 rounded-lg px-3 py-2">Documentation</button>
+                      <button class="bg-gray-200 no-underline text-slate-900 rounded-lg px-3 py-2">Become a Partner</button>
+                  </div>
+              </div>
           </div>
-          <!-- Head Line End -->
-
-          <!-- logo tree -->
-          <div class=" mr-4  py-7 px-60 ">
-            <img src="img/lxroot_3.png" alt="Placeholder Image" class=" w-96 h-96 radial-gradient ">
+      
+          <!-- Image Content (Only on Large Screens) -->
+          <div class="hidden lg:block py-7 px-4 lg:px-20 mr-10">
+              <img src="img/lxroot_3.png" alt="Placeholder Image" class="bg-gradient-to-t from-[#0000FF] to-[#ADD8E6]">
           </div>
-        </div>
+      </div>
+      
        
-        <div class="text-center grid place-items-center">
-            <hr width="62%" color="green" />
-            <p class="text-3xl font-semibold py-4"  >LxRoot</p>
-            <p class="text-2xl py-10 px-60 text-slate-500 font-serif">Your all-in-one platform for seamless hosting and site management. Streamlined, efficient,
-                 and loaded with features to <br> supercharge your development experience.
-                 Focus on scaling your business, LxRoot takes care of the rest!</p>
-          </div>
+      <div class="text-center grid place-items-center">    
+        <hr class="md:block hidden" width="62%" color="green" />
+        <hr class="w-full lg:hidden" color="green" />
+        <p class="text-3xl font-semibold py-4">LxRoot</p>
+        <p class="text-2xl py-10 px-6 md:px-20 lg:px-60 text-slate-500 font-serif">
+            Your all-in-one platform for seamless hosting and site management. Streamlined, efficient,
+            and loaded with features to <br> supercharge your development experience.
+            Focus on scaling your business, LxRoot takes care of the rest!
+        </p>
+    </div>
+    
 
-          <div class="text-center grid place-items-center py-40  ">
-            <hr width="62%" color="green" />
+    
+    <div class="text-center grid place-items-center py-40">
+      <hr class="md:block hidden" width="62%" color="green" />
+      <hr class="w-full lg:hidden" color="green" />
+      <p class="text-3xl font-thin py-4">Who is LxRoot for?</p>
+  
+      <div class="grid grid-cols-2 md:grid-cols-4 md:grid-rows-4 gap-6 md:w-3/4 lg:mr-14 h-52 py-5">
+          <div class="grid place-items-center  md:place-items-center bg-slate-100 h-60 lg:ml-36 md:h-72 w-64 md:w-3/5 lg:w-64 lg:h-56 rounded-xl">
+              <!-- Developer content -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+              </svg>
+              <div class="px-2">   
+                 <p class="font-semibold text-center">Developers</p>
+                <p class="text-center font-medium py-2">Who designs, develops, and maintains applications</p>
+              </div>
+          </div>
+          <div class=" grid place-items-center md:place-items-center bg-slate-100 h-60 md:ml-24 md:h-72 w-64 md:w-3/5 lg:w-64  lg:h-56 rounded-xl">
+              <!-- Website Owner content -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20 ">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
+              </svg>
+           
+            
+              <div class="px-2">   
+                <p class="font-semibold text-center"> Website Owners</p>
+               <p class="text-center font-medium py-2">  Who owns a website</p>
+             </div>
+          </div>
+          <div class="grid place-items-center md:place-items-center md:ml-10 bg-slate-100 lg:ml-12 h-60 md:h-72 w-64 md:w-3/5  lg:w-64 lg:h-56 rounded-xl">
+              <!-- Small Medium Business content -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" />
+              </svg>
+              <div class="px-2">   
+                <p class="font-semibold text-center"> Small Medium Business </p>
+               <p class="text-center font-medium py-2">  Who running a ecommerce store</p>
+             </div>
+          </div>
+          <div class="grid place-items-center md:place-items-center bg-slate-100 h-60 md:h-72 w-64 md:w-3/5 lg:w-64 lg:h-56 lg:mr-8 rounded-xl">
+              <!-- Hosting Providers content -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+              </svg>
+
+              <div class="px-2">   
+                <p class="font-semibold text-center"> Hosting Providers</p>
+               <p class="text-center font-medium py-2">  Who provide cloud service</p>
+             </div>
+          </div>
+      </div>
+  </div>
+  
+
+          <!-- <div class="text-center grid place-items-center py-40  ">
+            <hr class="md:block hidden" width="62%" color="green" />
+            <hr class="w-full lg:hidden" color="green" />
             <p class="text-3xl font-thin py-4" >Who is LxRoot for?</p>
 
-            <div class=" grid grid-cols-4 py-6 w-3/4 mr-12 h-52">
+            <div class=" grid grid-cols-4 py-6 w-3/4 mr-12 h-52 md:grid-cols-2">
               <div class="  grid place-items-start md:place-items-center  bg-slate-100 h-60 w-3/4 ml-36 rounded-xl" >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20">
                   <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
@@ -82,6 +184,7 @@
                 </div>
                 
               </div>
+
               <div class="grid place-items-start md:place-items-center bg-slate-100 h-60 w-3/4 rounded-xl	ml-24" >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20 ">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
@@ -116,11 +219,280 @@
              
             </div>
 
-          </div>
+          </div> -->
 
           <!-- features start-- -->
-          <div class="text-center grid place-items-center py-40">
-            <hr width="62%" color="green" />
+
+
+          <div class="text-center grid place-items-center py-52">
+            <hr class="md:block hidden" width="62%" color="green" />
+            <hr class="w-full lg:hidden" color="green" />
+            <p class="text-3xl font-semibold py-4">features</p>
+            <div class="grid md:grid-cols-1 lg:grid-cols-3 sm:grid-cols-1 gap-4 place-items-stretch h-auto w-auto">
+             
+                <div class="grid place-items-start bg-slate-100 h-52 w-96 py-3 px-3 rounded-xl">
+                    <div class=" bg-slate-200 h-12 w-12 rounded-xl py-4 align-middle ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="object-center object-none w-6 h-6  inline ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+                        </svg>
+                    </div>
+                    <div class="p-6 font-serif text-slate-600">
+                        <p class="font-semibold text-left ">Golang/Rust App Hosting</p>
+                        <p class="py-3 text-sm m-2">
+                            ELF file hosting, supported language Golang, Rust, <br> Python, NodeJs, Ruby, Java
+                        </p>
+                    </div>
+                </div>
+        
+                <!-- Other grid items -->
+                <div class="grid place-items-start  bg-slate-100 h-52 w-96 py-3 px-3 rounded-xl	">
+                  <div class=" bg-slate-200 h-12 w-12 rounded-xl py-4 align-middle ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="object-center object-none w-6 h-6  inline ">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+                    </svg>
+                  </div>
+                  <div class="p-6 font-serif text-slate-500">
+                    <p class="font-semibold text-left  ">PHP Hosting</p>
+                    <p class="py-3 text-sm m-2">
+                      Simplifies PHP application hosting, deployment and management for integration and performance.
+                    </p>
+                  </div>
+                </div>
+                <!-- 3 -->
+                <div class="grid place-items-start  bg-slate-100 h-52 w-96 py-3 px-3 rounded-xl	">
+                  <div class=" bg-slate-200 h-12 w-12 rounded-xl py-4 align-middle ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="object-center object-none w-6 h-6  inline ">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+                    </svg>
+                  </div>
+                  <div class="p-6 font-serif text-slate-500">
+                    <p class="font-semibold text-left  ">DNS Hosting</p>
+                    <p class="py-3 text-sm m-2">
+                      Supported DNS record types are A, AAAA, CNAME, NS, TXT, MX, SRV, CAA, SSHFP, DS, DNSKEY.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- 4 -->
+
+                <div class="grid place-items-start  bg-slate-100 h-52 w-96 py-3 px-3 rounded-xl	">
+                  <div class=" bg-slate-200 h-12 w-12 rounded-xl py-4 align-middle ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="object-center object-none w-6 h-6  inline ">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+                    </svg>
+                  </div>
+                  <div class="p-6 font-serif text-slate-500">
+                    <p class="font-semibold text-left  ">DNS Hosting</p>
+                    <p class="py-3 text-sm m-2">
+                      Supported DNS record types are A, AAAA, CNAME, NS, TXT, MX, SRV, CAA, SSHFP, DS, DNSKEY.
+                    </p>
+                  </div>
+                </div>
+                <!-- 5 -->
+                <div class="grid place-items-start  bg-slate-100 h-52 w-96 py-3 px-3 rounded-xl	">
+                  <div class=" bg-slate-200 h-12 w-12 rounded-xl py-4 align-middle ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="object-center object-none w-6 h-6  inline ">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+                    </svg>
+                  </div>
+                  <div class="p-6 font-serif text-slate-500">
+                    <p class="font-semibold text-left  ">DNS Hosting</p>
+                    <p class="py-3 text-sm m-2">
+                      Supported DNS record types are A, AAAA, CNAME, NS, TXT, MX, SRV, CAA, SSHFP, DS, DNSKEY.
+                    </p>
+                  </div>
+                </div>
+                <!-- 6 -->
+                <div class="grid place-items-start  bg-slate-100 h-52 w-96 py-3 px-3 rounded-xl	">
+                  <div class=" bg-slate-200 h-12 w-12 rounded-xl py-4 align-middle ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="object-center object-none w-6 h-6  inline ">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+                    </svg>
+                  </div>
+                  <div class="p-6 font-serif text-slate-500">
+                    <p class="font-semibold text-left  ">DNS Hosting</p>
+                    <p class="py-3 text-sm m-2">
+                      Supported DNS record types are A, AAAA, CNAME, NS, TXT, MX, SRV, CAA, SSHFP, DS, DNSKEY.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- 7 -->
+                <div class="grid place-items-start  bg-slate-100 h-52 w-96 py-3 px-3 rounded-xl	">
+                  <div class=" bg-slate-200 h-12 w-12 rounded-xl py-4 align-middle ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="object-center object-none w-6 h-6  inline ">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+                    </svg>
+                  </div>
+                  <div class="p-6 font-serif text-slate-500">
+                    <p class="font-semibold text-left  ">DNS Hosting</p>
+                    <p class="py-3 text-sm m-2">
+                      Supported DNS record types are A, AAAA, CNAME, NS, TXT, MX, SRV, CAA, SSHFP, DS, DNSKEY.
+                    </p>
+                  </div>
+                </div>
+                <!-- 8 -->
+                <div class="grid place-items-start  bg-slate-100 h-52 w-96 py-3 px-3 rounded-xl	">
+                  <div class=" bg-slate-200 h-12 w-12 rounded-xl py-4 align-middle ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="object-center object-none w-6 h-6  inline ">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+                    </svg>
+                  </div>
+                  <div class="p-6 font-serif text-slate-500">
+                    <p class="font-semibold text-left  ">DNS Hosting</p>
+                    <p class="py-3 text-sm m-2">
+                      Supported DNS record types are A, AAAA, CNAME, NS, TXT, MX, SRV, CAA, SSHFP, DS, DNSKEY.
+                    </p>
+                  </div>
+                </div>
+                <!-- 9 -->
+                <div class="grid place-items-start  bg-slate-100 h-52 w-96 py-3 px-3 rounded-xl	">
+                  <div class=" bg-slate-200 h-12 w-12 rounded-xl py-4 align-middle ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="object-center object-none w-6 h-6  inline ">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+                    </svg>
+                  </div>
+                  <div class="p-6 font-serif text-slate-500">
+                    <p class="font-semibold text-left  ">DNS Hosting</p>
+                    <p class="py-3 text-sm m-2">
+                      Supported DNS record types are A, AAAA, CNAME, NS, TXT, MX, SRV, CAA, SSHFP, DS, DNSKEY.
+                    </p>
+                  </div>
+                </div>
+                <!-- 10 -->
+                <div class="grid place-items-start  bg-slate-100 h-52 w-96 py-3 px-3 rounded-xl	">
+                  <div class=" bg-slate-200 h-12 w-12 rounded-xl py-4 align-middle ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="object-center object-none w-6 h-6  inline ">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+                    </svg>
+                  </div>
+                  <div class="p-6 font-serif text-slate-500">
+                    <p class="font-semibold text-left  ">DNS Hosting</p>
+                    <p class="py-3 text-sm m-2">
+                      Supported DNS record types are A, AAAA, CNAME, NS, TXT, MX, SRV, CAA, SSHFP, DS, DNSKEY.
+                    </p>
+                  </div>
+                </div>
+                <!-- 11 -->
+                <div class="grid place-items-start  bg-slate-100 h-52 w-96 py-3 px-3 rounded-xl	">
+                  <div class=" bg-slate-200 h-12 w-12 rounded-xl py-4 align-middle ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="object-center object-none w-6 h-6  inline ">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+                    </svg>
+                  </div>
+                  <div class="p-6 font-serif text-slate-500">
+                    <p class="font-semibold text-left  ">DNS Hosting</p>
+                    <p class="py-3 text-sm m-2">
+                      Supported DNS record types are A, AAAA, CNAME, NS, TXT, MX, SRV, CAA, SSHFP, DS, DNSKEY.
+                    </p>
+                  </div>
+                </div>
+                <!-- 12 -->
+                <div class="grid place-items-start  bg-slate-100 h-52 w-96 py-3 px-3 rounded-xl	">
+                  <div class=" bg-slate-200 h-12 w-12 rounded-xl py-4 align-middle ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="object-center object-none w-6 h-6  inline ">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+                    </svg>
+                  </div>
+                  <div class="p-6 font-serif text-slate-500">
+                    <p class="font-semibold text-left  ">DNS Hosting</p>
+                    <p class="py-3 text-sm m-2">
+                      Supported DNS record types are A, AAAA, CNAME, NS, TXT, MX, SRV, CAA, SSHFP, DS, DNSKEY.
+                    </p>
+                  </div>
+                </div>
+                <!-- 13 -->
+                <div class="grid place-items-start  bg-slate-100 h-52 w-96 py-3 px-3 rounded-xl	">
+                  <div class=" bg-slate-200 h-12 w-12 rounded-xl py-4 align-middle ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="object-center object-none w-6 h-6  inline ">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+                    </svg>
+                  </div>
+                  <div class="p-6 font-serif text-slate-500">
+                    <p class="font-semibold text-left  ">DNS Hosting</p>
+                    <p class="py-3 text-sm m-2">
+                      Supported DNS record types are A, AAAA, CNAME, NS, TXT, MX, SRV, CAA, SSHFP, DS, DNSKEY.
+                    </p>
+                  </div>
+                </div>
+                <!-- 14 -->
+                <div class="grid place-items-start  bg-slate-100 h-52 w-96 py-3 px-3 rounded-xl	">
+                  <div class=" bg-slate-200 h-12 w-12 rounded-xl py-4 align-middle ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="object-center object-none w-6 h-6  inline ">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+                    </svg>
+                  </div>
+                  <div class="p-6 font-serif text-slate-500">
+                    <p class="font-semibold text-left  ">DNS Hosting</p>
+                    <p class="py-3 text-sm m-2">
+                      Supported DNS record types are A, AAAA, CNAME, NS, TXT, MX, SRV, CAA, SSHFP, DS, DNSKEY.
+                    </p>
+                  </div>
+                </div>
+                <!-- 15 -->
+                <div class="grid place-items-start  bg-slate-100 h-52 w-96 py-3 px-3 rounded-xl	">
+                  <div class=" bg-slate-200 h-12 w-12 rounded-xl py-4 align-middle ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="object-center object-none w-6 h-6  inline ">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+                    </svg>
+                  </div>
+                  <div class="p-6 font-serif text-slate-500">
+                    <p class="font-semibold text-left  ">DNS Hosting</p>
+                    <p class="py-3 text-sm m-2">
+                      Supported DNS record types are A, AAAA, CNAME, NS, TXT, MX, SRV, CAA, SSHFP, DS, DNSKEY.
+                    </p>
+                  </div>
+                </div>
+                <!-- 16 -->
+                <div class="grid place-items-start  bg-slate-100 h-52 w-96 py-3 px-3 rounded-xl	">
+                  <div class=" bg-slate-200 h-12 w-12 rounded-xl py-4 align-middle ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="object-center object-none w-6 h-6  inline ">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+                    </svg>
+                  </div>
+                  <div class="p-6 font-serif text-slate-500">
+                    <p class="font-semibold text-left  ">DNS Hosting</p>
+                    <p class="py-3 text-sm m-2">
+                      Supported DNS record types are A, AAAA, CNAME, NS, TXT, MX, SRV, CAA, SSHFP, DS, DNSKEY.
+                    </p>
+                  </div>
+                </div>
+                <!-- 17 -->
+                 <div class="grid place-items-start  bg-slate-100 h-52 w-96 py-3 px-3 rounded-xl	">
+                  <div class=" bg-slate-200 h-12 w-12 rounded-xl py-4 align-middle ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="object-center object-none w-6 h-6  inline ">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+                    </svg>
+                  </div>
+                  <div class="p-6 font-serif text-slate-500">
+                    <p class="font-semibold text-left  ">DNS Hosting</p>
+                    <p class="py-3 text-sm m-2">
+                      Supported DNS record types are A, AAAA, CNAME, NS, TXT, MX, SRV, CAA, SSHFP, DS, DNSKEY.
+                    </p>
+                  </div>
+                </div>
+                <!-- 18 -->
+                <div class="grid place-items-start  bg-slate-100 h-52 w-96 py-3 px-3 rounded-xl	">
+                  <div class=" bg-slate-200 h-12 w-12 rounded-xl py-4 align-middle ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="object-center object-none w-6 h-6  inline ">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+                    </svg>
+                  </div>
+                  <div class="p-6 font-serif text-slate-500">
+                    <p class="font-semibold text-left  ">DNS Hosting</p>
+                    <p class="py-3 text-sm m-2">
+                      Supported DNS record types are A, AAAA, CNAME, NS, TXT, MX, SRV, CAA, SSHFP, DS, DNSKEY.
+                    </p>
+                  </div>
+                </div>
+        
+            </div>
+        </div>
+        
+
+          <!-- <div class="text-center grid place-items-center py-52">
+            <hr class="md:block hidden" width="62%" color="green" />
+            <hr class="w-full lg:hidden" color="green" />
             <p class="text-3xl font-semibold py-4">features</p>
             <div class="grid grid-cols-3 gap-4 place-items-stretch h-auto w-auto">
              
@@ -151,6 +523,7 @@
                   </p>
                 </div>
               </div>
+
               <div class="grid place-items-start  bg-slate-100 h-52 w-96 py-3 px-3 rounded-xl	">
                 <div class=" bg-slate-200 h-12 w-12 rounded-xl py-4 align-middle ">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="object-center object-none w-6 h-6  inline ">
@@ -375,7 +748,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <!-- features end-- -->
 
@@ -383,10 +756,256 @@
           <!-- Footer Section Start -->
          
         
+          <footer class="bg-white dark:bg-gray-900 lg:hidden">
+            <div class="container mx-auto max-w-screen-xl">
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-4 px-4 py-6 lg:py-8"> 
+                    <div class="md:col-span-2 lg:block hidden ">
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 dark:text-white">Products</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 text-sm">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Web Host Manager</a>
+                            </li>
+                            <!-- Other product links -->
+                            <li class="mb-4">
+                              <a href="#" class="hover:underline">Cloud Hosting</a>
+                          </li>
+                          <li class="mb-4">
+                              <a href="#" class="hover:underline">Managed Email Hosting</a>
+                          </li>
+                          <li class="mb-4">
+                              <a href="#" class="hover:underline">DNS Proxy</a>
+                          </li>
+                          <li class="mb-4">
+                            <a href="#" class="hover:underline">Object Storage</a>
+                        </li>
+                        <li class="mb-4">
+                          <a href="#" class="hover:underline">Content Delivery Network (CDN)</a>
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="hover:underline">Web Security Scanner</a>
+                    </li>
+                    <li class="mb-4">
+                      <a href="#" class="hover:underline">Website Speed Service</a>
+                  </li>
+                  <li class="mb-4">
+                    <a href="#" class="hover:underline">Linux Container</a>
+                </li>
+                        </ul>
+                        
+                    </div>
+                    <div class=" py-1 p-20 md:mr-8">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-4 text-white object-left ">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                      </svg>
+                      
+                    </div>
+                  
+                    <div class="md:col-span-2 lg:col-span-1">
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 dark:text-white">Features</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 text-sm">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Managed Email Hosting</a>
+                            </li>
+                            <!-- Other feature links -->
+                            <li class="mb-4">
+                              <a href="#" class="hover:underline">DNS Proxy</a>
+                          </li>
+                          <li class="mb-4">
+                              <a href="#" class="hover:underline">Object Storage</a>
+                          </li>
+                          <li class="mb-4">
+                            <a href="#" class="hover:underline">Content Delivery Network (CDN)</a>
+                        </li>
+                        <li class="mb-4">
+                          <a href="#" class="hover:underline">Web Host Manager</a>
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="hover:underline">Web Security Scanner</a>
+                    </li>
+                    <li class="mb-4">
+                      <a href="#" class="hover:underline">Website Speed Service</a>
+                  </li>
+                  <li class="mb-4">
+                    <a href="#" class="hover:underline">Linux Container</a>
+                </li>
+                        </ul>
+                    </div>
+                    <div class=" py-1 p-20">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-4 text-white object-left ">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                      </svg>
+                      
+                    </div>
+                    <div class="md:col-span-2 lg:col-span-1">
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 dark:text-white">Marketplace</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 text-sm">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Browse Apps</a>
+                            </li>
+                            <!-- Other marketplace links -->
+                            <li class="mb-4">
+                              <a href="#" class="hover:underline">Become a Vendor</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class=" py-1 p-20">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-4 text-white object-left ">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                      </svg>
+                      
+                    </div>
+
+                    <div class="md:col-span-2 lg:col-span-1">
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 dark:text-white">Resources</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 text-sm">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Cloud Hosting</a>
+                            </li>
+                            <!-- Other resource links -->
+                            <li class="mb-4">
+                              <a href="#" class="hover:underline">Managed Email Hosting</a>
+                          </li>
+                          <li class="mb-4">
+                              <a href="#" class="hover:underline">DNS Proxy</a>
+                          </li>
+                          <li class="mb-4">
+                              <a href="#" class="hover:underline">Content Delivery Network (CDN)</a>
+                          </li>
+                          <li class="mb-4">
+                            <a href="#" class="hover:underline">Web Host Manager</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Web Security Scanner</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Website Speed Service</a>
+                        </li>
+                        <li class="mb-4">
+                          <a href="#" class="hover:underline">Linux Container</a>
+                      </li>
+                        </ul>
+                    </div>
+
+                    <div class=" py-1 p-20">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-4 text-white object-left ">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                      </svg>
+                      
+                    </div>
+
+                    <div class="md:col-span-2 lg:col-span-1">
+                      <h2 class="mb-6 text-sm font-semibold text-gray-900 dark:text-white">Company</h2>
+                      <ul class="text-gray-500 dark:text-gray-400 text-sm">
+                        <li class="mb-4">
+                          <a href="#" class="hover:underline"> Cloud Hosting</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline">Managed Email Hosting</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline">DNS Proxy</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline">Object Storage</a>
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="hover:underline">Content Delivery Network (CDN)</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Web Host Manager</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Web Security Scanner</a>
+                    </li>
+                    <li class="mb-4">
+                      <a href="#" class="hover:underline">Website Speed Service</a>
+                  </li>
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">Linux Container</a>
+                  </li>
+                  </ul>
+                      
+                  </div>
+                  <div class=" py-1 p-20">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-4 text-white object-left ">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                    </svg>
+                    
+                  </div>
+                </div>
+                <p class="text-gray-500 dark:text-gray-400 px-11 text-sm ml-60 sm:ml-2 sm:text-center sm:mb-4 sm:whitespace-nowrap">Over 3 Cloud Servers Run by LxRoot</p>
+                <div class="sm:flex sm:items-center sm:justify-between left-10 mr-96 m-10">
+                  
+                  <div class="flex mt-4 sm:justify-center sm:mt-0 sm:ml-44">
+                      <!-- Social media links -->
+                      <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
+                          <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
+                      </svg>
+                        <span class="sr-only">Twitter page</span>
+                    </a>
+                      
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                      <svg class="w-6 h-6 rounded-full" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M22.675 0H1.327C.596 0 0 .596 0 1.327v21.346C0 23.404.596 24 1.327 24h11.491v-9.294H9.691V11.4h3.128V8.41c0-3.1 1.893-4.789 4.658-4.789 1.325 0 2.464.098 2.796.142v3.24l-1.919.001c-1.504 0-1.796.715-1.796 1.763v2.314h3.587l-.467 3.306h-3.12V24h6.11c.732 0 1.327-.596 1.327-1.327V1.327C24 .596 23.404 0 22.675 0z"/>
+                      </svg>
+                      <span class="sr-only">Facebook page</span>
+                  </a>
+                  
+        
+                  <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                    <svg class="w-6 h-6 rounded-full" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M21.843 6.345c-.2-1.6-1.59-2.88-3.185-2.96C16.057 3.36 12 3.36 12 3.36s-4.057 0-6.658.025c-1.595.08-2.985 1.36-3.185 2.96-.228 1.882-.228 4.735-.228 4.735s0 2.853.228 4.735c.2 1.6 1.59 2.88 3.185 2.96C7.943 20.64 12 20.64 12 20.64s4.057 0 6.658-.025c1.595-.08 2.985-1.36 3.185-2.96.228-1.882.228-4.735.228-4.735s0-2.853-.228-4.735zM9.545 15.52v-6.64l6.01 3.32-6.01 3.32z"/>
+                    </svg>
+                    <span class="sr-only">YouTube channel</span>
+                </a>
+                
+                     
+                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                  <svg class="w-6 h-6 rounded-full" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M19.618 0H4.382C1.965 0 0 1.965 0 4.382v15.236C0 22.035 1.965 24 4.382 24h15.236C22.035 24 24 22.035 24 19.618V4.382C24 1.965 22.035 0 19.618 0zM7.12 20.452H3.659V9h3.461v11.452zM5.39 7.362c-1.1 0-1.995-.895-1.995-2 0-1.105.895-2 2-2s2 .895 2 2c0 1.105-.895 2-2 2zm15.061 13.09h-3.462V14.33c0-1.455-.026-3.325-2.028-3.325-2.034 0-2.346 1.59-2.346 3.235v6.212H9.176V9h3.324v1.568h.046c.463-.883 1.597-1.814 3.286-1.814 3.515 0 4.161 2.312 4.161 5.315v6.384z"/>
+                  </svg>
+                  <span class="sr-only">LinkedIn profile</span>
+              </a>
+              
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                <svg class="w-6 h-6 rounded-full" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.415-4.033-1.415-.547-1.39-1.337-1.762-1.337-1.762-1.094-.747.083-.732.083-.732 1.207.085 1.844 1.239 1.844 1.239 1.076 1.844 2.823 1.312 3.51.999.107-.778.42-1.312.763-1.614-2.665-.303-5.466-1.332-5.466-5.93 0-1.31.468-2.382 1.236-3.22-.125-.303-.536-1.52.116-3.168 0 0 1.007-.322 3.3 1.23.958-.266 1.983-.398 3.003-.402 1.02.004 2.045.136 3.003.402 2.29-1.552 3.297-1.23 3.297-1.23.653 1.647.243 2.865.118 3.168.77.838 1.237 1.91 1.237 3.22 0 4.604-2.804 5.622-5.475 5.919.431.372.816 1.104.816 2.222v3.293c0 .318.217.694.824.576C20.564 21.8 24 17.302 24 12c0-6.627-5.373-12-12-12z"/>
+                </svg>
+                <span class="sr-only">GitHub account</span>
+            </a>
+                    
+            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+              <svg class="w-6 h-6 rounded-full" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M17.75 21.75h-11v-7.5h11v7.5zm3.048-11.39l-9.6-3.6.9-2.25 9.6 3.6-.9 2.25zm.45 5.39l-11.25 1.5-.3-2.25 11.25-1.5.3 2.25zm-.75-3.75l-10.5 4.5-.9-2.1 10.5-4.5.9 2.1zm-1.5-4.5l-7.2 8.1-1.95-1.65 7.2-8.1 1.95 1.65z"/>
+              </svg>
+              <span class="sr-only">Stack Overflow page</span>
+          </a>
+                  </div>
+              </div>
+                <hr class="my-2 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                <div class="flex flex-col md:flex-row items-center justify-between text-gray-500 dark:text-gray-400 text-sm px-4">
+                   
+                    <div class=" md:flex flex-wrap">
+                        <p class="mr-4 mb-2 md:mb-0">Terms of Service</p>
+                        <p class="mr-4 mb-2 md:mb-0">DMCA</p>
+                        <p class="mr-4 mb-2 md:mb-0">Privacy Policy</p>
+                        <p class="mb-2 md:mb-0">Cookie Policy</p>
+                    </div>
+                    <!-- <div class=" inline-block w-14 h-8  border-2"></div>   -->
+                    <div class=" mb-4 md:mb-0   font-extrabold">© LxRoot 2023</div>
+                    <p class="text-xs ">LxRoot is a registered trademark of LXROOT LLC.br <br> </p>
+                </div>
+                
+            </div>
+           
+          
+        </footer>
+        
 
 
-
-          <footer class="bg-white dark:bg-gray-900">
+        <!-- large screen  -->
+           <footer class="bg-white dark:bg-gray-900 md:block hidden">
             <div class="mx-auto w-full max-w-screen-xl">
               <div class="grid grid-cols-2 gap-4 px-4 py-6 lg:py-8 md:grid-cols-10">
                 <div>
@@ -621,11 +1240,11 @@
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 " />
         <div class="flex items-center text-white px-4 py-2 ml-72 pb-10">
-          <!-- Left-side square shape -->
-          <div class="w-14 h-8  border-2"></div>
+          <!-- Left-side square shape-->
+          <div class="w-14 h-8  border-2"></div>  
           
           <!-- Right-side content -->
-          <div class="ml-4">
+            <div class="ml-4">
               <p>© LxRoot 2023</p>
               <p class="text-gray-500 dark:text-gray-400 text-xs ">LxRoot is a registered trademark of LXROOT LLC.</p>
           </div>
@@ -643,12 +1262,28 @@
           
             </div>
             
-        </footer>
-        
+        </footer> 
+          
 
-
+<!-- end large  -->
           <!-- Footer Section End-- -->
 
     </div>
+    <script> 
+      const navLinks = document.querySelector('.nav-links') 
+      function onToggleMenu(e) { 
+          e.name = e.name === 'menu' ? 'close' : 'menu' 
+          
+          navLinks.classList.toggle('top-[5%]') 
+      } 
+  </script> 
+    <!-- <script>
+      const navLinks = document.querySelector('.nav-links')
+      function onToggleMenu(e){
+          e.name = e.name === 'menu' ? 'close' : 'menu'
+          navLinks.classList.toggle('top-[9%]')
+      }
+  </script> -->
+
 </body>
   </html>
